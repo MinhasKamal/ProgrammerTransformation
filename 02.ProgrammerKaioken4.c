@@ -1,5 +1,5 @@
-/// You have learned to use flag,
-/// and think that- it is the coolest.
+/// You have learned to use flag, and think
+/// that- it is the coolest.
 
 int func_pri_num(int a){
 	int i, f = 0;

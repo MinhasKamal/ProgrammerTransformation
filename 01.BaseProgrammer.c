@@ -1,6 +1,6 @@
 /// It took a long time to come up with this solution.
-/// You made several mistakes at the beginning.
-/// But now, you are proud of your code.
+/// You made several mistakes at the beginning. But now,
+/// you are proud of your code.
 
 int func (int a)
 {
