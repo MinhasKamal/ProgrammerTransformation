@@ -1,8 +1,13 @@
+
+>
 > Real programmers don't read manuals. Reliance on a reference is a hallmark of the novice and the coward.
+>
 
 ---
 
+>
 > If it was hard to write, it should be hard to read.
+>
 
 ---
 
