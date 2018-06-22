@@ -2,12 +2,15 @@
 
 #### The Evolutionary Story of *Homo Programmer*
 
+So, you have fallen love at the very first sight! And, thank god, it is not one of those Homo sapienses. It is rather a species from a completely differently kingdom- Machinia.
 
 ### Problem:
 
 **Write a function that tells if an integer is prime or not.**
 
-### Levels: 
+### Story: 
+
+You recently have discovered the startling universe of computer programming. Done with the "hallo world", now you are ready to dominate this infinite cosmos of bits.
 
 01. [Base Programmer](01.BaseProgrammer.c)
 02. [Programmer Kaioken x4](02.ProgrammerKaioken4.c)

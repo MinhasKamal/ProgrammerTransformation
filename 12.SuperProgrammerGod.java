@@ -2,10 +2,12 @@
 /// consumption; and if you can do some pre-processing,
 /// then you should. Thus, for small integers, you
 /// bring down the complexity from √n to 1!
+/// You also know why `i > j/i` is better than `i*i > j`.
 
 public class PrimeNumberChecker {
 
     public static final int MAX_MEMORY_SPACE = 64000000;
+    public static final int MIN_MEMORY_SPACE = 4;
 
     private boolean[] primeNumberMarks;
 
@@ -14,8 +16,10 @@ public class PrimeNumberChecker {
     }
 
     public PrimeNumberChecker(int maxValue) {
-        if (maxValue > MAX_MEMORY_SPACE) {
+        if (MAX_MEMORY_SPACE < maxValue) {
             maxValue = MAX_MEMORY_SPACE;
+        } else if (MIN_MEMORY_SPACE > maxValue) {
+            maxValue = MIN_MEMORY_SPACE;
         }
 
         this.primeNumberMarks = new boolean[maxValue+1];
@@ -23,15 +27,13 @@ public class PrimeNumberChecker {
     }
 
     private void markPrimeNumbers() {
-        for (int i=0; i<primeNumberMarks.length; ++i) {
+        for (int i = 2; i < primeNumberMarks.length; ++i) {
             primeNumberMarks[i] = true;
         }
-        primeNumberMarks[0] = false;
-        primeNumberMarks[1] = false;
 
-        for (int i=0; i*i<primeNumberMarks.length; ++i) {
+        for (int i = 2; i < primeNumberMarks.length/i; ++i) {
             if (true == primeNumberMarks[i]) {
-                for (int j=i+i; j<primeNumberMarks.length; j+=i) {
+                for (int j = i+i; j < primeNumberMarks.length; j += i) {
                     primeNumberMarks[j] = false;
                 }
             }
@@ -55,7 +57,7 @@ public class PrimeNumberChecker {
             return false;
         }
 
-        for (int factor = 3; factor*factor <= number; factor += 2) {
+        for (int factor = 3; factor <= number/factor; factor += 2) {
             if (0 == number%factor) {
                 return false;
             }
