@@ -31,7 +31,7 @@ public class PrimeNumberChecker {
             primeNumberMarks[i] = true;
         }
 
-        for (int i = 2; i < primeNumberMarks.length/i; ++i) {
+        for (int i = 2; i <= primeNumberMarks.length/i; ++i) {
             if (true == primeNumberMarks[i]) {
                 for (int j = i+i; j < primeNumberMarks.length; j += i) {
                     primeNumberMarks[j] = false;
