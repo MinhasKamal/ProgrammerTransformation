@@ -1,7 +1,6 @@
-/// Now, you are smart enough not to use flag;
-/// making the code a little bit more efficient.
-/// You could use break with flag, but return is
-/// better.
+/// You don't need to calculate all the way to the end, finding one divisor
+/// is enough. So, just 'return', no need for 'flag'. 'break' would work too,
+/// but 'return' is better.
 
 int prime_num(int x){
 	int i = 2;
