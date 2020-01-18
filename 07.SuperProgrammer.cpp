@@ -1,8 +1,10 @@
-/// You check boundary cases too.
-/// No room for unreliable codes :)
+/// You have improved time complexity from n to √n! BRILLIANT!!!
+/// You cover boundary cases too. No room for unreliable codes :)
+/// Most importantly, who elite uses tab?!
+
+#include <math.h>
 
 bool checkPrime(int number) {
-
     if (number < 2) {
         return false;
     }
@@ -13,7 +15,8 @@ bool checkPrime(int number) {
         return false;
     }
 
-    for (int limit = number/3, factor = 3; factor < limit; factor += 2) {
+    int limit = sqrt(number);
+    for (int factor = 3; factor <= limit; factor += 2) {
         if (number % factor == 0) {
             return false;
         }
