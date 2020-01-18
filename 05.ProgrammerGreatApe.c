@@ -1,5 +1,6 @@
 /// You want everyone to understand your code easily.
-/// So, you put some REALLLLY helpful comments.
+/// So, you put some REALLLLY helpful comments. Runtime
+/// is cut from n/2 to n/3.
 
 /*
  * checks if a number is prime
