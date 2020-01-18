@@ -1,22 +1,19 @@
-/// You improve time complexity from n to √n!
-/// You have truly become smart now.
+/// You have come up with a more clever solution for computing √n.
+/// In fact, you don't really need to calculate it.
+/// `2 == number` instead of `number == 2` can save you from lots
+/// of trouble caused by mistyping one `=`; giving compilation error
+/// in place of undetectable bug.
 
-#include <math.h>
-
-bool isPrime(int number) {
-    if (number < 2) {
-        return false;
-    }
-    if (number == 2) {
+bool isPrime (int number) {
+    if (2 == number) {
         return true;
     }
-    if (number % 2 == 0) {
+    if (2 > number || 0 == number%2) {
         return false;
     }
 
-    int limit = sqrt(number);
-    for (int factor = 3; factor <= limit; factor += 2) {
-        if (number % factor == 0) {
+    for (int factor = 3; factor*factor <= number; factor += 2) {
+        if (0 == number%factor) {
             return false;
         }
     }
