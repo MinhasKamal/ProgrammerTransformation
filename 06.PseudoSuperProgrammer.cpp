@@ -1,6 +1,6 @@
 /// You understand that, mere comment cannot make bad code look good.
-/// So, you get rid of those crappy names and comments, and make the
-/// code truly readable.
+/// So, you get rid of those crappy names plus annoying comments, and make
+/// the code truly readable.
 
 bool primeNumberChecker(int number){
 
