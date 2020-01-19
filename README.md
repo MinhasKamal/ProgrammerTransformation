@@ -131,7 +131,7 @@ You understand that, mere comment cannot make bad code look good. So, you get ri
     }
 
 ### 07. [Super Programmer](07.SuperProgrammer.cpp)
-You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You cover boundary cases too. No room for unreliable codes :) 
+You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You cover boundary cases too. No room for unreliable codes :) <br>
 *Most importantly, who elite uses tab?!*
 
     #include <math.h>
@@ -158,7 +158,7 @@ You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You cover bou
     }
 
 ### 08. [Super Programmer 2](08.SuperProgrammer2.cpp)
-You have come up with a more clever solution for computing '√n'. In fact, you don't really need to calculate it.
+You have come up with a more clever solution for computing '√n'. In fact, you don't really need to calculate it. <br>
 `2 == number` instead of `number == 2` can save you from lots of trouble caused by mistyping one `=`; giving compilation error in place of undetectable bug.
 
     bool isPrime (int number) {
@@ -179,8 +179,23 @@ You have come up with a more clever solution for computing '√n'. In fact, you 
     }
 
 ### 09. [Super Programmer 3](09.SuperProgrammer3.cpp)
+
 ### 10. [Golden-Programmer-Great-Ape](10.Golden-Programmer-Great-Ape.cpp)
+You simply got over-bored...
+
+    bool isPrime(int N, int _=2){
+    	return _*_>N?1<N:N%_&&isPrime(N,++_);
+    }
+
 ### 11. [Super Programmer 4](11.SuperProgrammer4.java)
+u don't give a **f\*$%**
+
+    public class PrimeNumberChecker {
+        public boolean isPrime(int n) {
+            return n>1?!new String(new char[n]).matches(".?|(..+?)\\1+"):false;
+        }
+    }
+
 ### 12. [Super Programmer God](12.SuperProgrammerGod.java)
 ### 13. [Super Programmer God Blue](13.SuperProgrammerGodBlue.java)
 ### 14. [Super Programmer Blue Kaioken](14.SuperProgrammerBlueKaioken.c)
