@@ -1,20 +1,29 @@
-/// You have come up with a more clever solution for
-/// computing √n. In fact, you don't really need to
-/// calculate it.
+///
+///
 
 bool isPrime (int number) {
-    if (2 == number) {
+    if (3 >= number) {
+        if (2 > number) {
+            return false;
+        }
         return true;
     }
-    
-    if (2 > number || 0 == number%2) {
+
+    if (0 == (number&1) || 0 == (number%3)) {
         return false;
     }
 
-    for (int factor = 3; factor*factor <= number; factor += 2) {
+    int factor = 5;
+    while (factor*factor <= number) {
         if (0 == number%factor) {
             return false;
         }
+        factor += 2;
+
+        if (0 == number%factor) {
+            return false;
+        }
+        factor += 4;
     }
 
     return true;
