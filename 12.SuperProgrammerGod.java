@@ -1,8 +1,7 @@
-/// Execution time is much more important than memory 
+/// Execution time is much more important than memory
 /// consumption; and if you can do some pre-processing,
 /// then you should. Thus, for small integers, you
 /// bring down the complexity from √n to 1!
-/// You also know why `i > j/i` is better than `i*i > j`.
 
 public class PrimeNumberChecker {
 
@@ -31,7 +30,7 @@ public class PrimeNumberChecker {
             primeNumberMarks[i] = true;
         }
 
-        for (int i = 2; i <= primeNumberMarks.length/i; ++i) {
+        for (int i = 2; i*i <= primeNumberMarks.length; ++i) {
             if (true == primeNumberMarks[i]) {
                 for (int j = i+i; j < primeNumberMarks.length; j += i) {
                     primeNumberMarks[j] = false;
@@ -53,14 +52,21 @@ public class PrimeNumberChecker {
     }
 
     private boolean checkPrime (int number) {
-        if (0 == number%2) {
+        if (0 == (number%2) || 0 == (number%3)) {
             return false;
         }
 
-        for (int factor = 3; factor <= number/factor; factor += 2) {
+        int factor = 5;
+        while (factor*factor <= number) {
             if (0 == number%factor) {
                 return false;
             }
+            factor += 2;
+
+            if (0 == number%factor) {
+                return false;
+            }
+            factor += 4;
         }
 
         return true;
