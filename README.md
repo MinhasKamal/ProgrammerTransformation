@@ -197,28 +197,6 @@ bool isPrime (int number) {
 ### 09. [Super Programmer 3](09.SuperProgrammer3.cpp)
 
 ``` SuperProgrammer3.cpp
-int _sqrt (int number) {
-    int firstPoint = 1;
-    int middlePoint;
-    int lastPoint = number;
-
-    int root = firstPoint;
-    while (true) {
-        middlePoint = (firstPoint + lastPoint) / 2;
-
-        if (root == middlePoint) {
-            return root;
-        }
-
-        root = middlePoint;
-        if (root*root <= number) {
-            firstPoint = root;
-        } else {
-            lastPoint = root;
-        }
-    }
-}
-
 bool isPrime (int number) {
     if (3 >= number) {
         if (2 > number) {
@@ -227,13 +205,12 @@ bool isPrime (int number) {
         return true;
     }
 
-    if (0 == number%2 || 0 == number%3) {
+    if (0 == (number&1) || 0 == (number%3)) {
         return false;
     }
 
     int factor = 5;
-    int limit = _sqrt(number);
-    while (factor <= limit) {
+    while (factor*factor <= number) {
         if (0 == number%factor) {
             return false;
         }
@@ -270,8 +247,81 @@ public class PrimeNumberChecker {
 ```
 
 ### 12. [Super Programmer God](12.SuperProgrammerGod.java)
-### 13. [Super Programmer God Blue](13.SuperProgrammerGodBlue.java)
-### 14. [Super Programmer Blue Kaioken](14.SuperProgrammerBlueKaioken.c)
+
+``` PrimeNumberChecker.java
+public class PrimeNumberChecker {
+
+    public static final int MAX_MEMORY_SPACE = 64000000;
+    public static final int MIN_MEMORY_SPACE = 4;
+
+    private boolean[] primeNumberMarks;
+
+    public PrimeNumberChecker() {
+        this(MAX_MEMORY_SPACE);
+    }
+
+    public PrimeNumberChecker(int maxValue) {
+        if (MAX_MEMORY_SPACE < maxValue) {
+            maxValue = MAX_MEMORY_SPACE;
+        } else if (MIN_MEMORY_SPACE > maxValue) {
+            maxValue = MIN_MEMORY_SPACE;
+        }
+
+        this.primeNumberMarks = new boolean[maxValue+1];
+        markPrimeNumbers();
+    }
+
+    private void markPrimeNumbers() {
+        for (int i = 2; i < primeNumberMarks.length; ++i) {
+            primeNumberMarks[i] = true;
+        }
+
+        for (int i = 2; i*i <= primeNumberMarks.length; ++i) {
+            if (true == primeNumberMarks[i]) {
+                for (int j = i+i; j < primeNumberMarks.length; j += i) {
+                    primeNumberMarks[j] = false;
+                }
+            }
+        }
+
+        return;
+    }
+
+    public boolean isPrime(int number) {
+        if (number < 0) {
+            return false;
+        } else if (number < primeNumberMarks.length) {
+            return primeNumberMarks[number];
+        } else {
+            return checkPrime(number);
+        }
+    }
+
+    private boolean checkPrime (int number) {
+        if (0 == (number%2) || 0 == (number%3)) {
+            return false;
+        }
+
+        int factor = 5;
+        while (factor*factor <= number) {
+            if (0 == number%factor) {
+                return false;
+            }
+            factor += 2;
+
+            if (0 == number%factor) {
+                return false;
+            }
+            factor += 4;
+        }
+
+        return true;
+    }
+}
+```
+
+### 13. [Super Programmer God Blue](#)
+### 14. [Super Programmer Blue Kaioken](#)
 ### 15. [Programmer Ultra Instinct](#)
 
 
