@@ -1,7 +1,7 @@
-/// Execution time is much more important than memory
-/// consumption; and if you can do some pre-processing,
-/// then you should. Thus, for small integers, you
-/// bring down the complexity from √n to 1!
+/// Execution time is more important than memory consumption.
+/// And if you can do some preprocessing then you should.
+/// Thus, for smaller integers you have reduced the complexity
+/// from √n to 1.
 
 public class PrimeNumberChecker {
 
