@@ -1,5 +1,5 @@
 /// You have improved time complexity from n to √n! BRILLIANT!!!
-/// You cover boundary cases too. No room for unreliable codes :)
+/// You covered boundary cases too. No room for unreliable codes :)
 /// Most importantly, who elite uses tab?!
 
 #include <math.h>
