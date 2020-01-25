@@ -143,7 +143,7 @@ bool primeNumberChecker(int number){
 ```
 
 ### 07. [Super Programmer](07.SuperProgrammer.cpp)
-You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You cover boundary cases too. No room for unreliable codes :) <br>
+You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You covered boundary cases too. No room for unreliable codes :) <br>
 *Most importantly, who elite uses tab?!*
 
 ``` SuperProgrammer.cpp
@@ -195,7 +195,7 @@ bool isPrime (int number) {
 ```
 
 ### 09. [Super Programmer 3](09.SuperProgrammer3.cpp)
-As we don't need to check divisibility by all even numbers after checking by 2, the same goes for 3. So, now we are checking divisibility by only the odd numbers that are not multiple of 3.
+As we don't need to check divisibility by all even numbers after checking by 2, the same goes for 3. So, now we are checking divisibility by only the odd numbers those are not multiple of 3.
 
 ``` SuperProgrammer3.cpp
 bool isPrime (int number) {
@@ -323,6 +323,11 @@ public class PrimeNumberChecker {
 ```
 
 ### 13. [Super Programmer God Blue](#)
+Code readability is the most important in todays 
+
+```
+```
+
 ### 14. [Super Programmer Blue Kaioken](#)
 ### 15. [Programmer Ultra Instinct](#)
 
