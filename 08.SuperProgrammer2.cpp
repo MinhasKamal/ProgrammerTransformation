@@ -1,7 +1,7 @@
 /// You have come up with a more clever solution for computing √n.
 /// In fact, you don't really need to calculate it.
 /// `2 == number` instead of `number == 2` can save you from lots
-/// of trouble caused by mistyping one `=`; giving compilation error
+/// of trouble caused by mistyping one `=` giving compilation error
 /// in place of undetectable bug.
 
 bool isPrime (int number) {
