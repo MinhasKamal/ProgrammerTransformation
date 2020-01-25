@@ -1,5 +1,6 @@
-///
-///
+/// As we don't need to check divisibility by all even numbers after
+/// checking by 2, the same goes for 3. So, now we are checking
+/// divisibility by only the odd numbers that are not multiple of 3.
 
 bool isPrime (int number) {
     if (3 >= number) {
