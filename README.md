@@ -118,7 +118,7 @@ int prime_check(int n){
 ```
 
 ### 06. [Pseudo Super Programmer](06.PseudoSuperProgrammer.cpp)
-You understand that, mere comment cannot make bad code look good. So, you get rid of those crappy names plus annoying comments, and make the code truly readable.
+Now, you understand- **mere comment cannot make bad code look good**. So, you get rid of those crappy names plus annoying comments, and make the code truly readable.
 
 ``` PseudoSuperProgrammer.cpp
 bool primeNumberChecker(int number){
@@ -195,6 +195,7 @@ bool isPrime (int number) {
 ```
 
 ### 09. [Super Programmer 3](09.SuperProgrammer3.cpp)
+As we don't need to check divisibility by all even numbers after checking by 2, the same goes for 3. So, now we are checking divisibility by only the odd numbers that are not multiple of 3.
 
 ``` SuperProgrammer3.cpp
 bool isPrime (int number) {
@@ -247,6 +248,7 @@ public class PrimeNumberChecker {
 ```
 
 ### 12. [Super Programmer God](12.SuperProgrammerGod.java)
+Execution time is more important than memory consumption. And if you can do some preprocessing then you should. Thus, for smaller integers you have reduced the complexity from √n to 1.
 
 ``` PrimeNumberChecker.java
 public class PrimeNumberChecker {
