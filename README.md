@@ -1,6 +1,6 @@
 # ProgrammerTransformation
-#### The Journey of *Homo Programmer*
-So, you have fallen love at the very first sight! And, thank god, it is not one of those *Homo sapienses*. It is rather a species from a completely differently kingdom- ***Machinia***.
+#### The Journey of A *Homo programmer*
+So, you have fallen love at the very first sight! And, thank god, it is not one of those imbecile apes. It is rather a species from a completely different kingdom- ***Machinia***.
 
 
 ## Assignment:
@@ -8,8 +8,6 @@ Write a program that tells if an integer is prime or not.
 
 
 ## The Journey:
-Welcome to your grand entrance in the startling universe of computer programming. Done with the "hallo world", you are now ready to dominate this infinite cosmos of bits.
-
 
 ### 01. [Base Programmer](01.BaseProgrammer.c)
 Though you knew how prime number worked, it took a long time to come up with this logic. Also, You made several mistakes on the way. And now, you are proud of your brilliant solution.
