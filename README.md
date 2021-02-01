@@ -10,7 +10,7 @@ Write a program that tells if an integer is prime or not.
 ## The Journey:
 
 ### 01. [Base Programmer](01.BaseProgrammer.c)
-Though you knew how prime number worked, it took a long time to come up with this logic. Also, You made several mistakes on the way. And now, you are proud of your brilliant solution.
+Though you knew how prime numbers work, it took a long time to come up with this logic. Also, You made several mistakes on the way. But now, you are proud of your brilliant solution.
 
 ``` BaseProgrammer.c
 int func(int a)   
@@ -33,7 +33,7 @@ else
 ```
 
 ### 02. [Programmer Kaioken x4](02.ProgrammerKaioken4.c)
-You have learned to use flag, and think that- it is the coolest. Also, indentation is super important!
+You have learned to use flags, and think that they are the coolest. Also, indentation is super important!
 
 ``` ProgrammerKaioken4.c
 int pri_num(int a) {
@@ -47,7 +47,7 @@ int pri_num(int a) {
 ```
 
 ### 03. [Programmer Kaioken x10](03.ProgrammerKaioken10.c)
-You don't need to calculate all the way to the end, finding one divisor is enough. So, just `return`, no need for 'flag'. `break` would do too, but `return` is better.
+You don't need to calculate all the way to the end; finding one divisor is enough. So, just `return`; no need for 'flag'. `break` would do too, but `return` is better.
 
 ``` ProgrammerKaioken10.c
 int prime_num(int x){
@@ -64,7 +64,7 @@ int prime_num(int x){
 ```
 
 ### 04. [Programmer Kaioken x20](04.ProgrammerKaioken20.c)
-You have grown SMARTER, and halved the run time by checking divisibility with odd-numbers only. You also understand that looping till 'x/2' is enough.
+You have grown SMARTER and have halved the run time by checking divisibility with odd-numbers only. You also understand that looping till 'x/2' is enough.
 
 ``` ProgrammerKaioken20.c
 int prime_or_not(int x) {
@@ -116,7 +116,7 @@ int prime_check(int n){
 ```
 
 ### 06. [Pseudo Super Programmer](06.PseudoSuperProgrammer.cpp)
-Now, you understand- **mere comment cannot make bad code look good**. So, you get rid of those crappy names plus annoying comments, and make the code truly readable.
+Now, you understand- **mere comment cannot make bad code look good**. So, you get rid of those crappy names and annoying comments. And now, the code is truly readable.
 
 ``` PseudoSuperProgrammer.cpp
 bool primeNumberChecker(int number){
@@ -141,8 +141,9 @@ bool primeNumberChecker(int number){
 ```
 
 ### 07. [Super Programmer](07.SuperProgrammer.cpp)
-You have improved time complexity from 'n' to '√n'! BRILLIANT!!! You covered boundary cases too. No room for unreliable codes :) <br>
-*Most importantly, who elite uses tab?!*
+You have improved time complexity from 'n' to '√n'! BRILLIANT!!! <br>
+You covered boundary cases too: no room for unreliable codes :) <br>
+*Most importantly, who elite uses the tab?!*
 
 ``` SuperProgrammer.cpp
 #include <math.h>
@@ -170,8 +171,8 @@ bool checkPrime(int number) {
 ```
 
 ### 08. [Super Programmer 2](08.SuperProgrammer2.cpp)
-You have come up with a more clever solution for computing '√n'. In fact, you don't really need to calculate it. <br>
-`2 == number` instead of `number == 2` can save you from lots of trouble caused by mistyping one `=`; giving compilation error in place of undetectable bug.
+You have come up with a more clever solution for computing '√n'. In fact, you don't really need to calculate it! <br>
+`2 == number`, instead of `number == 2`, can save you from lots of troubles caused by mistyping one `=` by giving a compilation error in place of an undetectable bug.
 
 ``` SuperProgrammer2.cpp
 bool isPrime (int number) {
@@ -193,7 +194,7 @@ bool isPrime (int number) {
 ```
 
 ### 09. [Super Programmer 3](09.SuperProgrammer3.cpp)
-As we don't need to check divisibility by all even numbers after checking by 2, the same goes for 3. So, now we are checking divisibility by only the odd numbers those are not multiple of 3.
+As we don't need to check divisibility by all even numbers after checking by 2, the same goes for 3. So now, we are checking divisibility by only the odd numbers that are not multiples of 3.
 
 ``` SuperProgrammer3.cpp
 bool isPrime (int number) {
@@ -235,7 +236,7 @@ bool isPrime(int N, int _=2){
 ```
 
 ### 11. [Super Programmer 4](11.SuperProgrammer4.java)
-u don't give a **f\*$%**
+u don't give a duck
 
 ``` PrimeNumberChecker.java
 public class PrimeNumberChecker {
@@ -246,7 +247,7 @@ public class PrimeNumberChecker {
 ```
 
 ### 12. [Super Programmer God](12.SuperProgrammerGod.java)
-Execution time is more important than memory consumption. And if you can do some preprocessing then you should. Thus, for smaller integers you have reduced the complexity from √n to 1.
+Execution time is more important than memory consumption. And if you can do some preprocessing, then you should. Thus for smaller integers, you have reduced the complexity from √n to 1.
 
 ``` PrimeNumberChecker.java
 public class PrimeNumberChecker {
