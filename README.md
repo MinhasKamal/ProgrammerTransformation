@@ -323,11 +323,6 @@ public class PrimeNumberChecker {
 ```
 
 ### 13. [Super Programmer God Blue](#)
-Code readability is the most important in todays 
-
-```
-```
-
 ### 14. [Super Programmer Blue Kaioken](#)
 ### 15. [Programmer Ultra Instinct](#)
 
